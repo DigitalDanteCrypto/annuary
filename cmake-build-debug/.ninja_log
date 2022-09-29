@@ -1,0 +1,8 @@
+# ninja log v5
+1864	1974	1664465845030087236	annuaire	69d870b806ada28c
+2	2724	1664465569043430551	CMakeFiles/annuaire.dir/main.cpp.o	bd4701883e0f40c9
+3	1051	1664398112769238180	CMakeFiles/annuaire.dir/headers/userInput.cpp.o	11ee497aaa467f0b
+3	2613	1664465568929667834	CMakeFiles/annuaire.dir/headers/Annuary.cpp.o	aae6c357a9df4891
+4	1864	1664465844899275187	CMakeFiles/annuaire.dir/headers/Students.cpp.o	524fdc7694777459
+0	210	1664467653605835669	build.ninja	dfe1e790d78021e4
+14	396	1664467654022525164	annuaire	c675fe93c41cbfe7

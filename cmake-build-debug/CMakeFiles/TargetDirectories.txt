@@ -1,0 +1,3 @@
+/Users/floriansecretan/Desktop/gamedev/annuaire/cmake-build-debug/CMakeFiles/annuaire.dir
+/Users/floriansecretan/Desktop/gamedev/annuaire/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/floriansecretan/Desktop/gamedev/annuaire/cmake-build-debug/CMakeFiles/rebuild_cache.dir
