@@ -8,6 +8,7 @@ public:
 
     Students();
 
+    //Creation of map to get the students by key and values
     std::map<std::string, std::string> studentsList;
 
     //Initialling Dataset
@@ -17,16 +18,16 @@ public:
     void loopDisplayMenu();
 
 
-//1.
+//1. Getting the user input to add a student in map
     void gettingUserInput();
 
     //Method to add student in the list;
     void addStudentToList(std::string, std::string);
 
-//2.
+//2. Search Student function
     void searchStudent();
 
-//3.
+//3. and Display Annuary function
     void displayAnnuary();
 
     //Clearing Console;

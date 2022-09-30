@@ -7,8 +7,8 @@ void Students::loopDisplayMenu() {
     do {
         std::cout << "\n";
         std::cout << "|-------------------------------------|" << std::endl;
-        std::cout << "|       Welcome to the Annuary" << "        |" << std::endl;
-        std::cout << "|        Please choose an option" << "      |" <<  std::endl;
+        std::cout << "|       Welcome to the Annuary        |" << std::endl;
+        std::cout << "|        Please choose an option      |" <<  std::endl;
         std::cout << "|         1 : Add A Student           |" << std::endl;
         std::cout << "|         2 : Search A Student        |" << std::endl;
         std::cout << "|         3 : Display Annuary         |" << std::endl;
@@ -18,7 +18,7 @@ void Students::loopDisplayMenu() {
 
         int userChoice;
         std::cin >> userChoice;
-
+//Switch to choose between different menus
         switch (userChoice) {
             case 1:
                 clearConsole();
@@ -41,15 +41,15 @@ void Students::loopDisplayMenu() {
         }
     } while (display);
 }
-
+//Function to add student in the map by passing them as arguments
 void Students::addStudentToList(std::string fullname, std::string number) {
 
     studentsList.insert({fullname, number});
 }
-
+//Constructor
 Students::Students() {
 }
-
+//We get user input by using cin
 void Students::gettingUserInput() {
 
     std::string userInputName;
@@ -58,14 +58,14 @@ void Students::gettingUserInput() {
     std::string userInputPhoneNumber;
 
     std::cout << "Hello, Please enter your information" << std::endl;
-    std::cout << " enter your name" << std::endl;
+    std::cout << "Enter your name : " << std::endl;
     std::cin >> userInputName;
-    std::cout << " enter your surname" << std::endl;
+    std::cout << "Enter your surname : " << std::endl;
     std::cin >> userInputSurname;
     userInputFullName = userInputName + " " + userInputSurname;
-    std::cout << " enter your phone number" << std::endl;
+    std::cout << "Enter your phone number : " << std::endl;
     std::cin >> userInputPhoneNumber;
-
+//We use this to find is user already exists in the map
     auto it = studentsList.find(userInputFullName);
 
     if (it != studentsList.end()) {
@@ -84,11 +84,11 @@ void Students::searchStudent() {
     std::string userSearchSurname;
     std::string userSearchFullInfo;
 
-    std::cout << "Find user by name, please enter name" << std::endl;
+    std::cout << "Find user by name, please enter name : " << std::endl;
 
     std::cin >> userSearchName;
 
-    std::cout << "Find user by name, please enter surname" << std::endl;
+    std::cout << "Find user by name, please enter surname : " << std::endl;
 
     std::cin >> userSearchSurname;
 
@@ -96,6 +96,7 @@ void Students::searchStudent() {
 
     std::cout << "Searching user... : " << userSearchFullInfo << std::endl;
 
+    //We search and use condition to display or not the user if it is found
     auto it = studentsList.find(userSearchFullInfo);
 
     if (it != studentsList.end()) {
@@ -124,7 +125,7 @@ void Students::clearConsole() {
     std::cout << "==================";
     std::cout << "\n";
 }
-
+//We put some placeholders data to just display some names
 void Students::initiallingDataset() {
     addStudentToList("Joseph Gorden", "2343243432");
     addStudentToList("London Price", "223524366");
