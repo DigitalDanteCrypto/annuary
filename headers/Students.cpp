@@ -1,7 +1,5 @@
 #include <iostream>
 #include "Students.h"
-#include <cctype>
-
 
 void Students::loopDisplayMenu() {
 
@@ -38,15 +36,12 @@ void Students::loopDisplayMenu() {
             default:
                 std::cout << "Error" << std::endl;
         }
-
-
     } while (display);
 }
 
 void Students::addStudentToList(std::string fullname, std::string number) {
 
     studentsList.insert({fullname, number});
-
 }
 
 Students::Students() {
@@ -122,13 +117,10 @@ void Students::displayAnnuary() {
 }
 
 void Students::clearConsole() {
-
     std::cout << "==================";
     std::cout << "\n";
     std::cout << "==================";
     std::cout << "\n";
-
-
 }
 
 void Students::initiallingDataset() {
@@ -137,5 +129,4 @@ void Students::initiallingDataset() {
     addStudentToList("Samuel Olden", "22343432166");
     addStudentToList("Urga Peace", "123456789");
     std::cout << "\n";
-
 }

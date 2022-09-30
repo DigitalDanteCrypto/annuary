@@ -1,5 +1,4 @@
 #pragma once
-
 #include <string>
 #include <map>
 
@@ -14,15 +13,15 @@ public:
     //Initialling Dataset
     void initiallingDataset();
 
-    //Method to add student in the list;
-    void addStudentToList(std::string, std::string);
-
     //display menus;
-
     void loopDisplayMenu();
+
 
 //1.
     void gettingUserInput();
+
+    //Method to add student in the list;
+    void addStudentToList(std::string, std::string);
 
 //2.
     void searchStudent();

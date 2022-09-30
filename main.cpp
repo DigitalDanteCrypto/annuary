@@ -1,8 +1,6 @@
 #include <iostream>
 #include "headers/Students.h"
 
-
-
 int main() {
 
     Students Annuaire;
