@@ -6,12 +6,15 @@ void Students::loopDisplayMenu() {
     bool display = true;
     do {
         std::cout << "\n";
-        std::cout << "Welcome to the Annuary" << std::endl;
-        std::cout << "Please choose an option" << std::endl;
-        std::cout << "1 : Add A Student" << std::endl;
-        std::cout << "2 : Search A Student" << std::endl;
-        std::cout << "3 :  Display Annuary" << std::endl;
-        std::cout << "4 :  Exit program" << std::endl;
+        std::cout << "|-------------------------------------|" << std::endl;
+        std::cout << "|       Welcome to the Annuary" << "        |" << std::endl;
+        std::cout << "|        Please choose an option" << "      |" <<  std::endl;
+        std::cout << "|         1 : Add A Student           |" << std::endl;
+        std::cout << "|         2 : Search A Student        |" << std::endl;
+        std::cout << "|         3 : Display Annuary         |" << std::endl;
+        std::cout << "|         4 : Exit program            |" << std::endl;
+        std::cout << "|-------------------------------------|" << std::endl;
+
 
         int userChoice;
         std::cin >> userChoice;
@@ -45,7 +48,6 @@ void Students::addStudentToList(std::string fullname, std::string number) {
 }
 
 Students::Students() {
-
 }
 
 void Students::gettingUserInput() {
